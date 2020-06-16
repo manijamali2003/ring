@@ -1,2 +1,3 @@
 # ring
-Ring Key for commercial media
+
+Ring (c) 2020 Mani Jamali. MIT License
