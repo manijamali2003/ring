@@ -26,24 +26,12 @@ def check (owner,license,key1):
 
     ## Conditions ##
     if l[0]=='RING-V1':
-        if l[1]==hashlib.sha3_512('In the name of God, the Compassionate, the Merciful'.encode()).hexdigest():
-            if l[2]==hashlib.sha3_512(owner.encode()).hexdigest():
-                if l[3]==hashlib.sha3_512(license.encode()).hexdigest():
-                    if l[4]==hashlib.sha3_512(str(time.ctime(os.path.getctime("LICENSE.rvd"))).encode()).hexdigest():
-                        if l[5]==hashlib.sha3_512(str(time.ctime(os.path.getmtime("LICENSE.rvd"))).encode()).hexdigest():
-                            if l[6]==hashlib.sha3_512(key1.encode()).hexdigest():
+        if l[1]==hashlib.sha3_512('In the name of God, the Compassionate, the Merciful'.encode()).hexdigest() \
+            and l[2]==hashlib.sha3_512(owner.encode()).hexdigest()\
+                and l[3]==hashlib.sha3_512(license.encode()).hexdigest()\
+                    and l[4]==hashlib.sha3_512(str(time.ctime(os.path.getctime("LICENSE.rvd"))).encode()).hexdigest()\
+                        and l[5]==hashlib.sha3_512(str(time.ctime(os.path.getmtime("LICENSE.rvd"))).encode()).hexdigest()\
+                            and l[6]==hashlib.sha3_512(key1.encode()).hexdigest():
                                 return True
-                            else:
-                                return False
-                        else:
-                            return False
-                    else:
-                        return False
-                else:
-                    return False
-            else:
-                return False
-        else:
-            return False
     else:
         return False
