@@ -47,6 +47,3 @@ def check (owner,license,key1):
             return False
     else:
         return False
-
-create('hello','GPLv3','R-1435')
-print (check('hello','GPLv3','R-1435'))

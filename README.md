@@ -12,7 +12,7 @@ git clone https://github.com/manijamali2003/ring
 
 - Create your license (license.py just in your system):
 
-```shell script
+```python
 import ring1
 
 ring1.create ('Your Company name','Your license name','R-nnnn') ## Instead of nnnn enter 4th digit number e.g. R-1234
@@ -21,7 +21,7 @@ ring1.create ('Your Company name','Your license name','R-nnnn') ## Instead of nn
 - Run license script
 - Create your main script code for your app:
 
-```shell script
+```python
 import ring1
 
 key = ring1.check ('Your Company name','Your license name','R-nnnn') ## Instead of nnnn enter 4th digit number e.g. R-1234
