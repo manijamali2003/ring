@@ -13,18 +13,18 @@ git clone https://github.com/manijamali2003/ring
 - Create your license (license.py just in your system):
 
 ```python
-import ring1
+import ring
 
-ring1.create ('Your Company name','Your license name','R-nnnn') ## Instead of nnnn enter 4th digit number e.g. R-1234
+ring.create ('Your Company name','Your license name','R-nnnn') ## Instead of nnnn enter 4th digit number e.g. R-1234
 ```
 
 - Run license script
 - Create your main script code for your app:
 
 ```python
-import ring1
+import ring
 
-key = ring1.check ('Your Company name','Your license name','R-nnnn') ## Instead of nnnn enter 4th digit number e.g. R-1234
+key = ring.check ('Your Company name','Your license name','R-nnnn') ## Instead of nnnn enter 4th digit number e.g. R-1234
 
 if key==True:
     print ("Welcome to this commercial app!")
