@@ -15,7 +15,7 @@ git clone https://github.com/manijamali2003/ring
 ```python
 import ring
 
-ring.create ('Your Company name','Your license name','R-nnnn') ## Instead of nnnn enter 4th digit number e.g. R-1234
+ring.ring1.create ('Your Company name','Your license name','R-nnnn') ## Instead of nnnn enter 4th digit number e.g. R-1234
 ```
 
 - Run license script
@@ -24,7 +24,7 @@ ring.create ('Your Company name','Your license name','R-nnnn') ## Instead of nnn
 ```python
 import ring
 
-key = ring.check ('Your Company name','Your license name','R-nnnn') ## Instead of nnnn enter 4th digit number e.g. R-1234
+key = ring.ring1.check ('Your Company name','Your license name','R-nnnn') ## Instead of nnnn enter 4th digit number e.g. R-1234
 
 if key==True:
     print ("Welcome to this commercial app!")
